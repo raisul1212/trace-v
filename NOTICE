@@ -1,0 +1,9 @@
+Third-party material used by this project keeps its own terms:
+
+- PicoRV32, Copyright (C) Claire Xenia Wolf <claire@yosyshq.com>,
+  ISC licence: https://github.com/YosysHQ/picorv32
+- SkyWater SKY130 PDK and the sky130_fd_sc_hd standard cells,
+  Copyright SkyWater Technology Foundry and Google LLC, Apache License 2.0:
+  https://github.com/google/skywater-pdk
+
+Nothing in this repository grants a licence to Lampro AI's own work yet.
