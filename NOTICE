@@ -1,9 +1,18 @@
-Third-party material used by this project keeps its own terms:
+This package contains work under three licenses.
 
-- PicoRV32, Copyright (C) Claire Xenia Wolf <claire@yosyshq.com>,
-  ISC licence: https://github.com/YosysHQ/picorv32
-- SkyWater SKY130 PDK and the sky130_fd_sc_hd standard cells,
-  Copyright SkyWater Technology Foundry and Google LLC, Apache License 2.0:
-  https://github.com/google/skywater-pdk
+1. This package (netlists, layout, constraints, timing data, testbench, scripts
+   and documentation), except the components listed in 2 and 3:
+   Academic license for non-commercial academic instruction and research only.
+   Copyright (c) 2026 Raisul Islam. See LICENSE.
 
-Nothing in this repository grants a licence to Lampro AI's own work yet.
+2. rtl/picorv32.v: PicoRV32, ISC license.
+   Copyright (C) 2015 Claire Xenia Wolf. Included unmodified.
+   See LICENSES/ISC-picorv32.txt.
+
+3. SkyWater SKY130 PDK and standard-cell data contained in the layout, netlists
+   and models (https://github.com/google/skywater-pdk): Apache License 2.0.
+   Copyright SkyWater Technology Foundry and Google LLC.
+   See LICENSES/Apache-2.0.txt. The PDK itself is not included in this package.
+
+The academic license in LICENSE does not restrict any right that the licenses
+in 2 and 3 grant in those components themselves.

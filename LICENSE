@@ -1,0 +1,38 @@
+TRACE-V — PicoRV32 on SkyWater SKY130 — Block Implementation
+Academic License: Non-Commercial Academic Instruction and Research Only
+
+Copyright (c) 2026 Raisul Islam. All rights reserved, except as granted below.
+
+1. Grant.
+   You may use, copy, study and modify the files in this repository, free of charge, solely for non-commercial academic instruction and research.
+
+2. Not permitted.
+   Any commercial use is not permitted without prior written permission from the copyright holder. This includes:
+   - use in or for a commercial product or service;
+   - fabrication of these files, or of anything derived from them, for commercial purposes;
+   - paid consulting or services based on them;
+   - redistribution for any commercial purpose.
+
+3. Redistribution.
+   You may redistribute these files, modified or not, only for non-commercial academic instruction and research. Any redistribution must:
+   - include this license and the NOTICE file, unchanged;
+   - be under these same terms.
+
+4. Attribution.
+   Publications, theses and teaching materials that use these files should cite this repository.
+
+5. Third-party components.
+   These components remain under their own licenses, which are reproduced in NOTICE:
+   - rtl/picorv32.v: ISC license, Copyright (C) 2015 Claire Xenia Wolf.
+   - SkyWater SKY130 PDK and standard-cell data contained in the layout, netlists and models: Apache License 2.0, SkyWater Technology Foundry and Google LLC.
+
+   This license does not restrict any right that those licenses grant in those components themselves.
+
+6. Origin.
+   These design outputs were produced with electronic design automation software licensed to Purdue University for academic instruction and research. This license keeps the outputs within that use.
+
+7. No warranty; no liability.
+   THE FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE FILES OR THEIR USE, INCLUDING ANY USE IN FABRICATION.
+
+8. Other uses.
+   For commercial licensing or any use not covered above, contact Raisul Islam at raisul@purdue.edu.

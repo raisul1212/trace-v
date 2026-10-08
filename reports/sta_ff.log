@@ -1,0 +1,113 @@
+OpenSTA 2.7.0 GITDIR-NOT Copyright (c) 2025, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+STA_SPEF_ERROR: none
+STA_SPEF_DRIVERS: 8665 174
+STA_CORNER ff
+Startpoint: resetn (input port clocked by clk)
+Endpoint: reg_op2_reg[30] (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   4.000    4.000 ^ input external delay
+   0.000    4.000 ^ resetn (in)
+   0.036    4.036 v FE_RC_23_0/Y (sky130_fd_sc_hd__nand2_8)
+   0.083    4.119 ^ FE_RC_24_0/Y (sky130_fd_sc_hd__inv_12)
+   0.057    4.176 v FE_OFC1291_n_441/Y (sky130_fd_sc_hd__clkinv_8)
+   0.097    4.272 v FE_OFC2031_n_443/X (sky130_fd_sc_hd__buf_2)
+   0.413    4.685 ^ g144377/Y (sky130_fd_sc_hd__nor2_2)
+   0.191    4.876 ^ FE_OFC2365_n_3110/X (sky130_fd_sc_hd__clkbuf_2)
+   0.032    4.908 v FE_RC_74_0/Y (sky130_fd_sc_hd__nand2_1)
+   0.056    4.964 ^ FE_RC_71_0/Y (sky130_fd_sc_hd__nand2_1)
+   0.040    5.004 v FE_RC_72_0/Y (sky130_fd_sc_hd__inv_2)
+   0.099    5.104 ^ g141962/Y (sky130_fd_sc_hd__nand4_1)
+   0.031    5.134 v FE_RC_477_0/Y (sky130_fd_sc_hd__nor3b_2)
+   0.063    5.197 ^ FE_OFC2418_FE_RN_38_0/Y (sky130_fd_sc_hd__inv_1)
+   0.000    5.197 ^ reg_op2_reg[30]/D (sky130_fd_sc_hd__dfxtp_1)
+            5.197   data arrival time
+
+   8.000    8.000   clock clk (rise edge)
+   0.000    8.000   clock source latency
+   0.000    8.000 ^ clk (in)
+   0.107    8.107 ^ CTS_ccl_a_buf_00173/X (sky130_fd_sc_hd__clkbuf_16)
+   0.126    8.234 ^ CTS_ccl_a_buf_00167/X (sky130_fd_sc_hd__clkbuf_8)
+   0.129    8.363 ^ CTS_ccl_a_buf_00013/X (sky130_fd_sc_hd__clkbuf_4)
+   0.001    8.364 ^ reg_op2_reg[30]/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.250    8.114   clock uncertainty
+   0.000    8.114   clock reconvergence pessimism
+  -0.031    8.083   library setup time
+            8.083   data required time
+-----------------------------------------------------------
+            8.083   data required time
+           -5.197   data arrival time
+-----------------------------------------------------------
+            2.886   slack (MET)
+
+
+Startpoint: is_lbu_lhu_lw_reg (rising edge-triggered flip-flop clocked by clk)
+Endpoint: latched_is_lu_reg (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.133    0.133 ^ CTS_ccl_a_buf_00174/X (sky130_fd_sc_hd__clkbuf_16)
+   0.140    0.273 ^ CTS_ccl_a_buf_00157/X (sky130_fd_sc_hd__clkbuf_16)
+   0.109    0.382 ^ CTS_ccl_a_buf_00045/X (sky130_fd_sc_hd__clkbuf_8)
+   0.001    0.383 ^ is_lbu_lhu_lw_reg/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.202    0.585 ^ is_lbu_lhu_lw_reg/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.070    0.655 ^ g144987/X (sky130_fd_sc_hd__a22o_1)
+   0.000    0.655 ^ latched_is_lu_reg/D (sky130_fd_sc_hd__dfxtp_1)
+            0.655   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.133    0.133 ^ CTS_ccl_a_buf_00174/X (sky130_fd_sc_hd__clkbuf_16)
+   0.140    0.273 ^ CTS_ccl_a_buf_00170/X (sky130_fd_sc_hd__clkbuf_16)
+   0.111    0.384 ^ CTS_ccl_a_buf_00044/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.385 ^ latched_is_lu_reg/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.250    0.635   clock uncertainty
+   0.000    0.635   clock reconvergence pessimism
+  -0.017    0.618   library hold time
+            0.618   data required time
+-----------------------------------------------------------
+            0.618   data required time
+           -0.655   data arrival time
+-----------------------------------------------------------
+            0.037   slack (MET)
+
+
+STA_SETUP_WORST 2.886
+STA_HOLD_WORST 0.037
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+g76831__1881/A2                         1.50    0.69    0.81 (MET)
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+CTS_ccl_a_buf_00001/X                    10     10      0 (MET)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+g146490/Y                               0.05    0.02    0.04 (MET)
+
+STA_MAX_SLEW_VIOLATIONS 0
+STA_MAX_CAP_VIOLATIONS 0
+STA_MAX_FANOUT_VIOLATIONS 0

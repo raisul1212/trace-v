@@ -1,0 +1,500 @@
+
+Magic 8.3 revision 623 - Compiled on Tue Mar 17 08:19:38 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=20480]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "extract.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: DesignLib
+Reading "picorv32".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+    65000 uses
+    70000 uses
+    75000 uses
+    80000 uses
+    85000 uses
+CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
+Reading "picorv32_VIA1".
+Reading "L1M1_PR_M".
+Reading "M1M2_PR_MR".
+Reading "picorv32_VIA0".
+Reading "M1M2_PR_R".
+Reading "L1M1_PR_R".
+Reading "M1M2_PR_M".
+Reading "M2M3_PR".
+Reading "M1M2_PR".
+Reading "L1M1_PR".
+Reading "sky130_fd_sc_hd__xor2_1".
+Reading "sky130_fd_sc_hd__xnor2_2".
+Reading "sky130_fd_sc_hd__xnor2_1".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__xor2_2".
+Reading "sky130_fd_sc_hd__o41ai_1".
+Reading "sky130_fd_sc_hd__o211a_1".
+Reading "sky130_fd_sc_hd__o211a_2".
+Reading "sky130_fd_sc_hd__o211ai_1".
+Reading "sky130_fd_sc_hd__o211ai_2".
+Reading "sky130_fd_sc_hd__o211ai_4".
+Reading "sky130_fd_sc_hd__o221ai_1".
+Reading "sky130_fd_sc_hd__o221ai_2".
+Reading "sky130_fd_sc_hd__o311a_1".
+Reading "sky130_fd_sc_hd__o2111ai_1".
+Reading "sky130_fd_sc_hd__or2_0".
+Reading "sky130_fd_sc_hd__or2_1".
+Reading "sky130_fd_sc_hd__or2_2".
+Reading "sky130_fd_sc_hd__or2_4".
+Reading "sky130_fd_sc_hd__or2b_1".
+Reading "sky130_fd_sc_hd__or3_1".
+Reading "sky130_fd_sc_hd__or4_1".
+Reading "sky130_fd_sc_hd__or4_4".
+Reading "sky130_fd_sc_hd__nor3b_2".
+Reading "sky130_fd_sc_hd__nor4_1".
+Reading "sky130_fd_sc_hd__nor4_2".
+Reading "sky130_fd_sc_hd__nor4b_1".
+Reading "sky130_fd_sc_hd__nor4b_2".
+Reading "sky130_fd_sc_hd__o2bb2a_1".
+Reading "sky130_fd_sc_hd__o2bb2ai_1".
+Reading "sky130_fd_sc_hd__o21a_1".
+Reading "sky130_fd_sc_hd__o21a_2".
+Reading "sky130_fd_sc_hd__o21ai_2".
+Reading "sky130_fd_sc_hd__o21ai_1".
+Reading "sky130_fd_sc_hd__o21ai_0".
+Reading "sky130_fd_sc_hd__o21ai_4".
+Reading "sky130_fd_sc_hd__o21bai_2".
+Reading "sky130_fd_sc_hd__o21bai_1".
+Reading "sky130_fd_sc_hd__o21bai_4".
+Reading "sky130_fd_sc_hd__o22a_1".
+Reading "sky130_fd_sc_hd__o22ai_1".
+Reading "sky130_fd_sc_hd__o22ai_2".
+Reading "sky130_fd_sc_hd__o31a_1".
+Reading "sky130_fd_sc_hd__o31ai_1".
+Reading "sky130_fd_sc_hd__nor2_2".
+Reading "sky130_fd_sc_hd__nand2_2".
+Reading "sky130_fd_sc_hd__inv_2".
+Reading "sky130_fd_sc_hd__conb_1".
+Reading "sky130_fd_sc_hd__mux2_1".
+Reading "sky130_fd_sc_hd__mux2_2".
+Reading "sky130_fd_sc_hd__mux2i_1".
+Reading "sky130_fd_sc_hd__nand2_1".
+Reading "sky130_fd_sc_hd__nand2_4".
+Reading "sky130_fd_sc_hd__nand2_8".
+Reading "sky130_fd_sc_hd__nand2b_1".
+Reading "sky130_fd_sc_hd__nand2b_2".
+Reading "sky130_fd_sc_hd__nand2b_4".
+Reading "sky130_fd_sc_hd__nand3_1".
+Reading "sky130_fd_sc_hd__nand3_2".
+Reading "sky130_fd_sc_hd__nand3_4".
+Reading "sky130_fd_sc_hd__nand3b_1".
+Reading "sky130_fd_sc_hd__nand3b_2".
+Reading "sky130_fd_sc_hd__nand4_1".
+Reading "sky130_fd_sc_hd__nand4_2".
+Reading "sky130_fd_sc_hd__nand4_4".
+Reading "sky130_fd_sc_hd__nand4b_1".
+Reading "sky130_fd_sc_hd__nand4b_2".
+Reading "sky130_fd_sc_hd__nor2_1".
+Reading "sky130_fd_sc_hd__nor2_4".
+Reading "sky130_fd_sc_hd__nor2b_1".
+Reading "sky130_fd_sc_hd__nor2b_2".
+Reading "sky130_fd_sc_hd__nor2b_4".
+Reading "sky130_fd_sc_hd__nor3_1".
+Reading "sky130_fd_sc_hd__nor3_2".
+Reading "sky130_fd_sc_hd__nor3_4".
+Reading "sky130_fd_sc_hd__nor3b_1".
+Reading "sky130_fd_sc_hd__fa_1".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__fill_4".
+Reading "sky130_fd_sc_hd__fill_8".
+Reading "sky130_fd_sc_hd__ha_1".
+Reading "sky130_fd_sc_hd__inv_1".
+Reading "sky130_fd_sc_hd__inv_12".
+Reading "sky130_fd_sc_hd__inv_8".
+Reading "sky130_fd_sc_hd__inv_6".
+Reading "sky130_fd_sc_hd__inv_4".
+Reading "sky130_fd_sc_hd__dfxbp_1".
+Reading "sky130_fd_sc_hd__dfxbp_2".
+Reading "sky130_fd_sc_hd__dfxtp_1".
+Reading "sky130_fd_sc_hd__dfxtp_2".
+Reading "sky130_fd_sc_hd__dfxtp_4".
+Reading "sky130_fd_sc_hd__diode_2".
+Reading "sky130_fd_sc_hd__and4b_1".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__buf_2".
+Reading "sky130_fd_sc_hd__buf_4".
+Reading "sky130_fd_sc_hd__buf_6".
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Reading "sky130_fd_sc_hd__clkbuf_8".
+Reading "sky130_fd_sc_hd__clkbuf_4".
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__clkinv_1".
+Reading "sky130_fd_sc_hd__clkinv_2".
+Reading "sky130_fd_sc_hd__clkinv_4".
+Reading "sky130_fd_sc_hd__clkinv_8".
+Reading "sky130_fd_sc_hd__a32oi_1".
+Reading "sky130_fd_sc_hd__a221oi_1".
+Reading "sky130_fd_sc_hd__a211oi_1".
+Reading "sky130_fd_sc_hd__a211o_1".
+Reading "sky130_fd_sc_hd__a221o_1".
+Reading "sky130_fd_sc_hd__a221oi_2".
+Reading "sky130_fd_sc_hd__a222oi_1".
+Reading "sky130_fd_sc_hd__a2111o_1".
+Reading "sky130_fd_sc_hd__and2_0".
+Reading "sky130_fd_sc_hd__and2_1".
+Reading "sky130_fd_sc_hd__and2b_1".
+Reading "sky130_fd_sc_hd__and2_4".
+Reading "sky130_fd_sc_hd__and2_2".
+Reading "sky130_fd_sc_hd__and3_4".
+Reading "sky130_fd_sc_hd__and3_2".
+Reading "sky130_fd_sc_hd__and3_1".
+Reading "sky130_fd_sc_hd__and3b_1".
+Reading "sky130_fd_sc_hd__and4_1".
+Reading "sky130_fd_sc_hd__a2bb2oi_1".
+Reading "sky130_fd_sc_hd__a21bo_1".
+Reading "sky130_fd_sc_hd__a21bo_2".
+Reading "sky130_fd_sc_hd__a21boi_1".
+Reading "sky130_fd_sc_hd__a21boi_2".
+Reading "sky130_fd_sc_hd__a21boi_4".
+Reading "sky130_fd_sc_hd__a21o_1".
+Reading "sky130_fd_sc_hd__a22o_1".
+Reading "sky130_fd_sc_hd__a21oi_4".
+Reading "sky130_fd_sc_hd__a21oi_2".
+Reading "sky130_fd_sc_hd__a22oi_2".
+Reading "sky130_fd_sc_hd__a22oi_1".
+Reading "sky130_fd_sc_hd__a22oi_4".
+Reading "sky130_fd_sc_hd__a21oi_1".
+Reading "sky130_fd_sc_hd__a31oi_1".
+Reading "sky130_fd_sc_hd__a32o_1".
+Processing picorv32_VIA0
+Processing M2M3_PR
+Processing M1M2_PR
+Processing M1M2_PR_M
+Processing picorv32_VIA1
+Processing sky130_fd_sc_hd__tapvpwrvgnd_1
+Processing sky130_fd_sc_hd__fill_8
+Processing sky130_fd_sc_hd__fill_4
+Processing sky130_fd_sc_hd__fill_2
+Processing sky130_fd_sc_hd__o2bb2ai_1
+Processing L1M1_PR
+Processing sky130_fd_sc_hd__fill_1
+Processing sky130_fd_sc_hd__dfxtp_1
+Processing sky130_fd_sc_hd__clkbuf_1
+Processing sky130_fd_sc_hd__buf_2
+Processing sky130_fd_sc_hd__a22o_1
+Processing L1M1_PR_R
+Processing sky130_fd_sc_hd__clkbuf_8
+Processing M1M2_PR_R
+Processing sky130_fd_sc_hd__inv_2
+Processing sky130_fd_sc_hd__buf_1
+Processing sky130_fd_sc_hd__xnor2_1
+Processing sky130_fd_sc_hd__nor2b_1
+Processing sky130_fd_sc_hd__or2_0
+Processing sky130_fd_sc_hd__nand2_1
+Processing sky130_fd_sc_hd__o21ai_1
+Processing sky130_fd_sc_hd__a31oi_1
+Processing sky130_fd_sc_hd__a21oi_1
+Processing sky130_fd_sc_hd__a211o_1
+Processing sky130_fd_sc_hd__nor3b_1
+Processing M1M2_PR_MR
+Processing sky130_fd_sc_hd__a22oi_1
+Processing sky130_fd_sc_hd__xor2_1
+Processing sky130_fd_sc_hd__a21boi_1
+Processing sky130_fd_sc_hd__nor2_1
+Processing sky130_fd_sc_hd__inv_1
+Processing sky130_fd_sc_hd__nand2b_1
+Processing sky130_fd_sc_hd__a221oi_1
+Processing sky130_fd_sc_hd__and2_1
+Processing sky130_fd_sc_hd__or4_4
+Processing sky130_fd_sc_hd__clkbuf_4
+Processing sky130_fd_sc_hd__nor4_1
+Processing sky130_fd_sc_hd__nand4_1
+Processing sky130_fd_sc_hd__nor2_2
+Processing sky130_fd_sc_hd__nand3_2
+Processing sky130_fd_sc_hd__o21ai_4
+Processing sky130_fd_sc_hd__mux2i_1
+Processing sky130_fd_sc_hd__and2_0
+Processing sky130_fd_sc_hd__or4_1
+Processing sky130_fd_sc_hd__nand3_1
+Processing sky130_fd_sc_hd__o21a_1
+Processing sky130_fd_sc_hd__and3_1
+Processing sky130_fd_sc_hd__nand2_2
+Processing sky130_fd_sc_hd__o211ai_1
+Processing sky130_fd_sc_hd__o221ai_1
+Processing sky130_fd_sc_hd__nand3b_1
+Processing sky130_fd_sc_hd__clkinv_1
+Processing sky130_fd_sc_hd__a221o_1
+Processing sky130_fd_sc_hd__nand2_4
+Processing sky130_fd_sc_hd__a211oi_1
+Processing sky130_fd_sc_hd__a222oi_1
+Processing sky130_fd_sc_hd__dfxbp_1
+Processing sky130_fd_sc_hd__o22ai_1
+Processing sky130_fd_sc_hd__ha_1
+Processing sky130_fd_sc_hd__nand4_4
+Processing sky130_fd_sc_hd__nand2b_4
+Processing sky130_fd_sc_hd__a2bb2oi_1
+Processing sky130_fd_sc_hd__o211ai_4
+Processing sky130_fd_sc_hd__a22oi_4
+Processing sky130_fd_sc_hd__nor3_1
+Processing sky130_fd_sc_hd__o21ai_2
+Processing sky130_fd_sc_hd__o2111ai_1
+Processing sky130_fd_sc_hd__nor4b_2
+Processing sky130_fd_sc_hd__and3_2
+Processing sky130_fd_sc_hd__inv_6
+Processing sky130_fd_sc_hd__nor2b_2
+Processing sky130_fd_sc_hd__clkbuf_16
+Processing sky130_fd_sc_hd__clkbuf_2
+Processing sky130_fd_sc_hd__a21boi_4
+Processing sky130_fd_sc_hd__nor3_2
+Processing sky130_fd_sc_hd__xnor2_2
+Processing sky130_fd_sc_hd__buf_6
+Processing sky130_fd_sc_hd__o21a_2
+Processing sky130_fd_sc_hd__o22a_1
+Processing sky130_fd_sc_hd__buf_4
+Processing sky130_fd_sc_hd__diode_2
+Processing sky130_fd_sc_hd__and2b_1
+Processing sky130_fd_sc_hd__nor2_4
+Processing sky130_fd_sc_hd__a21oi_2
+Processing sky130_fd_sc_hd__nand3_4
+Processing sky130_fd_sc_hd__clkinv_4
+Processing sky130_fd_sc_hd__o21bai_1
+Processing sky130_fd_sc_hd__o211ai_2
+Processing sky130_fd_sc_hd__and2_4
+Processing sky130_fd_sc_hd__a21o_1
+Processing sky130_fd_sc_hd__clkinv_2
+Processing sky130_fd_sc_hd__o221ai_2
+Processing sky130_fd_sc_hd__a21oi_4
+Processing sky130_fd_sc_hd__nand4b_2
+Processing sky130_fd_sc_hd__a21bo_1
+Processing sky130_fd_sc_hd__dfxtp_2
+Processing sky130_fd_sc_hd__nand3b_2
+Processing sky130_fd_sc_hd__nor3_4
+Processing sky130_fd_sc_hd__or3_1
+Processing sky130_fd_sc_hd__o31a_1
+Processing sky130_fd_sc_hd__a32oi_1
+Processing sky130_fd_sc_hd__nand2b_2
+Processing sky130_fd_sc_hd__nor4b_1
+Processing sky130_fd_sc_hd__o21ai_0
+Processing sky130_fd_sc_hd__or2b_1
+Processing sky130_fd_sc_hd__a221oi_2
+Processing sky130_fd_sc_hd__a2111o_1
+Processing sky130_fd_sc_hd__conb_1
+Processing sky130_fd_sc_hd__nand4_2
+Processing sky130_fd_sc_hd__inv_8
+Processing sky130_fd_sc_hd__o41ai_1
+Processing sky130_fd_sc_hd__inv_4
+Processing sky130_fd_sc_hd__dfxtp_4
+Processing sky130_fd_sc_hd__or2_2
+Processing sky130_fd_sc_hd__or2_1
+Processing sky130_fd_sc_hd__o21bai_2
+Processing sky130_fd_sc_hd__o22ai_2
+Processing sky130_fd_sc_hd__xor2_2
+Processing sky130_fd_sc_hd__a32o_1
+Processing sky130_fd_sc_hd__and3_4
+Processing sky130_fd_sc_hd__and4_1
+Processing L1M1_PR_M
+Processing sky130_fd_sc_hd__fa_1
+Processing sky130_fd_sc_hd__nor3b_2
+Processing sky130_fd_sc_hd__dfxbp_2
+Processing sky130_fd_sc_hd__o21bai_4
+Processing sky130_fd_sc_hd__nand4b_1
+Processing sky130_fd_sc_hd__nor4_2
+Processing sky130_fd_sc_hd__a22oi_2
+Processing sky130_fd_sc_hd__o31ai_1
+Processing sky130_fd_sc_hd__a21boi_2
+Processing sky130_fd_sc_hd__nor2b_4
+Processing sky130_fd_sc_hd__nand2_8
+Processing sky130_fd_sc_hd__and3b_1
+Processing sky130_fd_sc_hd__or2_4
+Processing sky130_fd_sc_hd__mux2_2
+Processing sky130_fd_sc_hd__o2bb2a_1
+Processing sky130_fd_sc_hd__mux2_1
+Processing sky130_fd_sc_hd__and2_2
+Processing sky130_fd_sc_hd__o211a_2
+Processing sky130_fd_sc_hd__clkinv_8
+Processing sky130_fd_sc_hd__inv_12
+Processing sky130_fd_sc_hd__a21bo_2
+Processing sky130_fd_sc_hd__o311a_1
+Processing sky130_fd_sc_hd__o211a_1
+Processing sky130_fd_sc_hd__and4b_1
+Processing picorv32
+Extracting picorv32_VIA0 into picorv32_VIA0.ext:
+Extracting M2M3_PR into M2M3_PR.ext:
+Extracting M1M2_PR into M1M2_PR.ext:
+Extracting M1M2_PR_M into M1M2_PR_M.ext:
+Extracting picorv32_VIA1 into picorv32_VIA1.ext:
+Extracting sky130_fd_sc_hd__tapvpwrvgnd_1 into sky130_fd_sc_hd__tapvpwrvgnd_1.ext:
+Extracting sky130_fd_sc_hd__fill_8 into sky130_fd_sc_hd__fill_8.ext:
+Extracting sky130_fd_sc_hd__fill_4 into sky130_fd_sc_hd__fill_4.ext:
+Extracting sky130_fd_sc_hd__fill_2 into sky130_fd_sc_hd__fill_2.ext:
+Extracting sky130_fd_sc_hd__o2bb2ai_1 into sky130_fd_sc_hd__o2bb2ai_1.ext:
+Extracting L1M1_PR into L1M1_PR.ext:
+Extracting sky130_fd_sc_hd__fill_1 into sky130_fd_sc_hd__fill_1.ext:
+Extracting sky130_fd_sc_hd__dfxtp_1 into sky130_fd_sc_hd__dfxtp_1.ext:
+Extracting sky130_fd_sc_hd__clkbuf_1 into sky130_fd_sc_hd__clkbuf_1.ext:
+Extracting sky130_fd_sc_hd__buf_2 into sky130_fd_sc_hd__buf_2.ext:
+Extracting sky130_fd_sc_hd__a22o_1 into sky130_fd_sc_hd__a22o_1.ext:
+Extracting L1M1_PR_R into L1M1_PR_R.ext:
+Extracting sky130_fd_sc_hd__clkbuf_8 into sky130_fd_sc_hd__clkbuf_8.ext:
+Extracting M1M2_PR_R into M1M2_PR_R.ext:
+Extracting sky130_fd_sc_hd__inv_2 into sky130_fd_sc_hd__inv_2.ext:
+Extracting sky130_fd_sc_hd__buf_1 into sky130_fd_sc_hd__buf_1.ext:
+Extracting sky130_fd_sc_hd__xnor2_1 into sky130_fd_sc_hd__xnor2_1.ext:
+Extracting sky130_fd_sc_hd__nor2b_1 into sky130_fd_sc_hd__nor2b_1.ext:
+Extracting sky130_fd_sc_hd__or2_0 into sky130_fd_sc_hd__or2_0.ext:
+Extracting sky130_fd_sc_hd__nand2_1 into sky130_fd_sc_hd__nand2_1.ext:
+Extracting sky130_fd_sc_hd__o21ai_1 into sky130_fd_sc_hd__o21ai_1.ext:
+Extracting sky130_fd_sc_hd__a31oi_1 into sky130_fd_sc_hd__a31oi_1.ext:
+Extracting sky130_fd_sc_hd__a21oi_1 into sky130_fd_sc_hd__a21oi_1.ext:
+Extracting sky130_fd_sc_hd__a211o_1 into sky130_fd_sc_hd__a211o_1.ext:
+Extracting sky130_fd_sc_hd__nor3b_1 into sky130_fd_sc_hd__nor3b_1.ext:
+Extracting M1M2_PR_MR into M1M2_PR_MR.ext:
+Extracting sky130_fd_sc_hd__a22oi_1 into sky130_fd_sc_hd__a22oi_1.ext:
+Extracting sky130_fd_sc_hd__xor2_1 into sky130_fd_sc_hd__xor2_1.ext:
+Extracting sky130_fd_sc_hd__a21boi_1 into sky130_fd_sc_hd__a21boi_1.ext:
+Extracting sky130_fd_sc_hd__nor2_1 into sky130_fd_sc_hd__nor2_1.ext:
+Extracting sky130_fd_sc_hd__inv_1 into sky130_fd_sc_hd__inv_1.ext:
+Extracting sky130_fd_sc_hd__nand2b_1 into sky130_fd_sc_hd__nand2b_1.ext:
+Extracting sky130_fd_sc_hd__a221oi_1 into sky130_fd_sc_hd__a221oi_1.ext:
+Extracting sky130_fd_sc_hd__and2_1 into sky130_fd_sc_hd__and2_1.ext:
+Extracting sky130_fd_sc_hd__or4_4 into sky130_fd_sc_hd__or4_4.ext:
+Extracting sky130_fd_sc_hd__clkbuf_4 into sky130_fd_sc_hd__clkbuf_4.ext:
+Extracting sky130_fd_sc_hd__nor4_1 into sky130_fd_sc_hd__nor4_1.ext:
+Extracting sky130_fd_sc_hd__nand4_1 into sky130_fd_sc_hd__nand4_1.ext:
+Extracting sky130_fd_sc_hd__nor2_2 into sky130_fd_sc_hd__nor2_2.ext:
+Extracting sky130_fd_sc_hd__nand3_2 into sky130_fd_sc_hd__nand3_2.ext:
+Extracting sky130_fd_sc_hd__o21ai_4 into sky130_fd_sc_hd__o21ai_4.ext:
+Extracting sky130_fd_sc_hd__mux2i_1 into sky130_fd_sc_hd__mux2i_1.ext:
+Extracting sky130_fd_sc_hd__and2_0 into sky130_fd_sc_hd__and2_0.ext:
+Extracting sky130_fd_sc_hd__or4_1 into sky130_fd_sc_hd__or4_1.ext:
+Extracting sky130_fd_sc_hd__nand3_1 into sky130_fd_sc_hd__nand3_1.ext:
+Extracting sky130_fd_sc_hd__o21a_1 into sky130_fd_sc_hd__o21a_1.ext:
+Extracting sky130_fd_sc_hd__and3_1 into sky130_fd_sc_hd__and3_1.ext:
+Extracting sky130_fd_sc_hd__nand2_2 into sky130_fd_sc_hd__nand2_2.ext:
+Extracting sky130_fd_sc_hd__o211ai_1 into sky130_fd_sc_hd__o211ai_1.ext:
+Extracting sky130_fd_sc_hd__o221ai_1 into sky130_fd_sc_hd__o221ai_1.ext:
+Extracting sky130_fd_sc_hd__nand3b_1 into sky130_fd_sc_hd__nand3b_1.ext:
+Extracting sky130_fd_sc_hd__clkinv_1 into sky130_fd_sc_hd__clkinv_1.ext:
+Extracting sky130_fd_sc_hd__a221o_1 into sky130_fd_sc_hd__a221o_1.ext:
+Extracting sky130_fd_sc_hd__nand2_4 into sky130_fd_sc_hd__nand2_4.ext:
+Extracting sky130_fd_sc_hd__a211oi_1 into sky130_fd_sc_hd__a211oi_1.ext:
+Extracting sky130_fd_sc_hd__a222oi_1 into sky130_fd_sc_hd__a222oi_1.ext:
+Extracting sky130_fd_sc_hd__dfxbp_1 into sky130_fd_sc_hd__dfxbp_1.ext:
+Extracting sky130_fd_sc_hd__o22ai_1 into sky130_fd_sc_hd__o22ai_1.ext:
+Extracting sky130_fd_sc_hd__ha_1 into sky130_fd_sc_hd__ha_1.ext:
+Extracting sky130_fd_sc_hd__nand4_4 into sky130_fd_sc_hd__nand4_4.ext:
+Extracting sky130_fd_sc_hd__nand2b_4 into sky130_fd_sc_hd__nand2b_4.ext:
+Extracting sky130_fd_sc_hd__a2bb2oi_1 into sky130_fd_sc_hd__a2bb2oi_1.ext:
+Extracting sky130_fd_sc_hd__o211ai_4 into sky130_fd_sc_hd__o211ai_4.ext:
+Extracting sky130_fd_sc_hd__a22oi_4 into sky130_fd_sc_hd__a22oi_4.ext:
+Extracting sky130_fd_sc_hd__nor3_1 into sky130_fd_sc_hd__nor3_1.ext:
+Extracting sky130_fd_sc_hd__o21ai_2 into sky130_fd_sc_hd__o21ai_2.ext:
+Extracting sky130_fd_sc_hd__o2111ai_1 into sky130_fd_sc_hd__o2111ai_1.ext:
+Extracting sky130_fd_sc_hd__nor4b_2 into sky130_fd_sc_hd__nor4b_2.ext:
+Extracting sky130_fd_sc_hd__and3_2 into sky130_fd_sc_hd__and3_2.ext:
+Extracting sky130_fd_sc_hd__inv_6 into sky130_fd_sc_hd__inv_6.ext:
+Extracting sky130_fd_sc_hd__nor2b_2 into sky130_fd_sc_hd__nor2b_2.ext:
+Extracting sky130_fd_sc_hd__clkbuf_16 into sky130_fd_sc_hd__clkbuf_16.ext:
+Extracting sky130_fd_sc_hd__clkbuf_2 into sky130_fd_sc_hd__clkbuf_2.ext:
+Extracting sky130_fd_sc_hd__a21boi_4 into sky130_fd_sc_hd__a21boi_4.ext:
+Extracting sky130_fd_sc_hd__nor3_2 into sky130_fd_sc_hd__nor3_2.ext:
+Extracting sky130_fd_sc_hd__xnor2_2 into sky130_fd_sc_hd__xnor2_2.ext:
+Extracting sky130_fd_sc_hd__buf_6 into sky130_fd_sc_hd__buf_6.ext:
+Extracting sky130_fd_sc_hd__o21a_2 into sky130_fd_sc_hd__o21a_2.ext:
+Extracting sky130_fd_sc_hd__o22a_1 into sky130_fd_sc_hd__o22a_1.ext:
+Extracting sky130_fd_sc_hd__buf_4 into sky130_fd_sc_hd__buf_4.ext:
+Extracting sky130_fd_sc_hd__diode_2 into sky130_fd_sc_hd__diode_2.ext:
+freeMagic called with NULL argument.
+sky130_fd_sc_hd__diode_2: 1 warning
+Extracting sky130_fd_sc_hd__and2b_1 into sky130_fd_sc_hd__and2b_1.ext:
+Extracting sky130_fd_sc_hd__nor2_4 into sky130_fd_sc_hd__nor2_4.ext:
+Extracting sky130_fd_sc_hd__a21oi_2 into sky130_fd_sc_hd__a21oi_2.ext:
+Extracting sky130_fd_sc_hd__nand3_4 into sky130_fd_sc_hd__nand3_4.ext:
+Extracting sky130_fd_sc_hd__clkinv_4 into sky130_fd_sc_hd__clkinv_4.ext:
+Extracting sky130_fd_sc_hd__o21bai_1 into sky130_fd_sc_hd__o21bai_1.ext:
+Extracting sky130_fd_sc_hd__o211ai_2 into sky130_fd_sc_hd__o211ai_2.ext:
+Extracting sky130_fd_sc_hd__and2_4 into sky130_fd_sc_hd__and2_4.ext:
+Extracting sky130_fd_sc_hd__a21o_1 into sky130_fd_sc_hd__a21o_1.ext:
+Extracting sky130_fd_sc_hd__clkinv_2 into sky130_fd_sc_hd__clkinv_2.ext:
+Extracting sky130_fd_sc_hd__o221ai_2 into sky130_fd_sc_hd__o221ai_2.ext:
+Extracting sky130_fd_sc_hd__a21oi_4 into sky130_fd_sc_hd__a21oi_4.ext:
+Extracting sky130_fd_sc_hd__nand4b_2 into sky130_fd_sc_hd__nand4b_2.ext:
+Extracting sky130_fd_sc_hd__a21bo_1 into sky130_fd_sc_hd__a21bo_1.ext:
+Extracting sky130_fd_sc_hd__dfxtp_2 into sky130_fd_sc_hd__dfxtp_2.ext:
+Extracting sky130_fd_sc_hd__nand3b_2 into sky130_fd_sc_hd__nand3b_2.ext:
+Extracting sky130_fd_sc_hd__nor3_4 into sky130_fd_sc_hd__nor3_4.ext:
+Extracting sky130_fd_sc_hd__or3_1 into sky130_fd_sc_hd__or3_1.ext:
+Extracting sky130_fd_sc_hd__o31a_1 into sky130_fd_sc_hd__o31a_1.ext:
+Extracting sky130_fd_sc_hd__a32oi_1 into sky130_fd_sc_hd__a32oi_1.ext:
+Extracting sky130_fd_sc_hd__nand2b_2 into sky130_fd_sc_hd__nand2b_2.ext:
+Extracting sky130_fd_sc_hd__nor4b_1 into sky130_fd_sc_hd__nor4b_1.ext:
+Extracting sky130_fd_sc_hd__o21ai_0 into sky130_fd_sc_hd__o21ai_0.ext:
+Extracting sky130_fd_sc_hd__or2b_1 into sky130_fd_sc_hd__or2b_1.ext:
+Extracting sky130_fd_sc_hd__a221oi_2 into sky130_fd_sc_hd__a221oi_2.ext:
+Extracting sky130_fd_sc_hd__a2111o_1 into sky130_fd_sc_hd__a2111o_1.ext:
+Extracting sky130_fd_sc_hd__conb_1 into sky130_fd_sc_hd__conb_1.ext:
+Extracting sky130_fd_sc_hd__nand4_2 into sky130_fd_sc_hd__nand4_2.ext:
+Extracting sky130_fd_sc_hd__inv_8 into sky130_fd_sc_hd__inv_8.ext:
+Extracting sky130_fd_sc_hd__o41ai_1 into sky130_fd_sc_hd__o41ai_1.ext:
+Extracting sky130_fd_sc_hd__inv_4 into sky130_fd_sc_hd__inv_4.ext:
+Extracting sky130_fd_sc_hd__dfxtp_4 into sky130_fd_sc_hd__dfxtp_4.ext:
+Extracting sky130_fd_sc_hd__or2_2 into sky130_fd_sc_hd__or2_2.ext:
+Extracting sky130_fd_sc_hd__or2_1 into sky130_fd_sc_hd__or2_1.ext:
+Extracting sky130_fd_sc_hd__o21bai_2 into sky130_fd_sc_hd__o21bai_2.ext:
+Extracting sky130_fd_sc_hd__o22ai_2 into sky130_fd_sc_hd__o22ai_2.ext:
+Extracting sky130_fd_sc_hd__xor2_2 into sky130_fd_sc_hd__xor2_2.ext:
+Extracting sky130_fd_sc_hd__a32o_1 into sky130_fd_sc_hd__a32o_1.ext:
+Extracting sky130_fd_sc_hd__and3_4 into sky130_fd_sc_hd__and3_4.ext:
+Extracting sky130_fd_sc_hd__and4_1 into sky130_fd_sc_hd__and4_1.ext:
+Extracting L1M1_PR_M into L1M1_PR_M.ext:
+Extracting sky130_fd_sc_hd__fa_1 into sky130_fd_sc_hd__fa_1.ext:
+Extracting sky130_fd_sc_hd__nor3b_2 into sky130_fd_sc_hd__nor3b_2.ext:
+Extracting sky130_fd_sc_hd__dfxbp_2 into sky130_fd_sc_hd__dfxbp_2.ext:
+Extracting sky130_fd_sc_hd__o21bai_4 into sky130_fd_sc_hd__o21bai_4.ext:
+Extracting sky130_fd_sc_hd__nand4b_1 into sky130_fd_sc_hd__nand4b_1.ext:
+Extracting sky130_fd_sc_hd__nor4_2 into sky130_fd_sc_hd__nor4_2.ext:
+Extracting sky130_fd_sc_hd__a22oi_2 into sky130_fd_sc_hd__a22oi_2.ext:
+Extracting sky130_fd_sc_hd__o31ai_1 into sky130_fd_sc_hd__o31ai_1.ext:
+Extracting sky130_fd_sc_hd__a21boi_2 into sky130_fd_sc_hd__a21boi_2.ext:
+Extracting sky130_fd_sc_hd__nor2b_4 into sky130_fd_sc_hd__nor2b_4.ext:
+Extracting sky130_fd_sc_hd__nand2_8 into sky130_fd_sc_hd__nand2_8.ext:
+Extracting sky130_fd_sc_hd__and3b_1 into sky130_fd_sc_hd__and3b_1.ext:
+Extracting sky130_fd_sc_hd__or2_4 into sky130_fd_sc_hd__or2_4.ext:
+Extracting sky130_fd_sc_hd__mux2_2 into sky130_fd_sc_hd__mux2_2.ext:
+Extracting sky130_fd_sc_hd__o2bb2a_1 into sky130_fd_sc_hd__o2bb2a_1.ext:
+Extracting sky130_fd_sc_hd__mux2_1 into sky130_fd_sc_hd__mux2_1.ext:
+Extracting sky130_fd_sc_hd__and2_2 into sky130_fd_sc_hd__and2_2.ext:
+Extracting sky130_fd_sc_hd__o211a_2 into sky130_fd_sc_hd__o211a_2.ext:
+Extracting sky130_fd_sc_hd__clkinv_8 into sky130_fd_sc_hd__clkinv_8.ext:
+Extracting sky130_fd_sc_hd__inv_12 into sky130_fd_sc_hd__inv_12.ext:
+Extracting sky130_fd_sc_hd__a21bo_2 into sky130_fd_sc_hd__a21bo_2.ext:
+Extracting sky130_fd_sc_hd__o311a_1 into sky130_fd_sc_hd__o311a_1.ext:
+Extracting sky130_fd_sc_hd__o211a_1 into sky130_fd_sc_hd__o211a_1.ext:
+Extracting sky130_fd_sc_hd__and4b_1 into sky130_fd_sc_hd__and4b_1.ext:
+Extracting picorv32 into picorv32.ext:
+Total of 1 warning.
+exttospice finished.

@@ -1,0 +1,132 @@
+OpenSTA 2.7.0 GITDIR-NOT Copyright (c) 2025, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+STA_SPEF_ERROR: none
+STA_SPEF_DRIVERS: 8665 174
+STA_CORNER ss
+Startpoint: reg_op2_reg[2] (rising edge-triggered flip-flop clocked by clk)
+Endpoint: alu_out_q_reg[30] (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.257    0.257 ^ CTS_ccl_a_buf_00173/X (sky130_fd_sc_hd__clkbuf_16)
+   0.324    0.581 ^ CTS_ccl_a_buf_00167/X (sky130_fd_sc_hd__clkbuf_8)
+   0.338    0.919 ^ CTS_ccl_a_buf_00003/X (sky130_fd_sc_hd__clkbuf_4)
+   0.000    0.920 ^ reg_op2_reg[2]/CLK (sky130_fd_sc_hd__dfxtp_2)
+   1.592    2.512 ^ reg_op2_reg[2]/Q (sky130_fd_sc_hd__dfxtp_2)
+   0.581    3.094 v sub_1240_38_Y_add_1240_58_g3430/X (sky130_fd_sc_hd__xor2_2)
+   0.517    3.611 v sub_1240_38_Y_add_1240_58_g3267/X (sky130_fd_sc_hd__or2_0)
+   0.117    3.728 ^ FE_RC_47_0/Y (sky130_fd_sc_hd__nand2_1)
+   0.167    3.895 v FE_RC_46_0/Y (sky130_fd_sc_hd__nand2_1)
+   0.163    4.058 ^ sub_1240_38_Y_add_1240_58_g3196/Y (sky130_fd_sc_hd__nand2_1)
+   0.187    4.246 v sub_1240_38_Y_add_1240_58_g3194/Y (sky130_fd_sc_hd__nand2_2)
+   0.274    4.520 ^ FE_RC_407_0/Y (sky130_fd_sc_hd__a21oi_4)
+   0.189    4.709 v FE_RC_393_0/Y (sky130_fd_sc_hd__o21ai_2)
+   0.327    5.036 ^ FE_RC_404_0/Y (sky130_fd_sc_hd__a21oi_2)
+   0.177    5.212 v FE_RC_239_0/Y (sky130_fd_sc_hd__inv_4)
+   0.145    5.358 ^ FE_RC_397_0/Y (sky130_fd_sc_hd__nand3_2)
+   0.214    5.571 v FE_RC_387_0/Y (sky130_fd_sc_hd__nand3_4)
+   0.151    5.722 ^ sub_1240_38_Y_add_1240_58_g3176/Y (sky130_fd_sc_hd__nand2_1)
+   0.181    5.902 v sub_1240_38_Y_add_1240_58_g3170/Y (sky130_fd_sc_hd__nand2_1)
+   0.163    6.065 ^ sub_1240_38_Y_add_1240_58_g3169/Y (sky130_fd_sc_hd__nand2_1)
+   0.138    6.203 v sub_1240_38_Y_add_1240_58_g3167/Y (sky130_fd_sc_hd__nand2_2)
+   0.122    6.325 ^ FE_OFC1871_sub_1240_38_Y_add_1240_58_n_2143/Y (sky130_fd_sc_hd__inv_2)
+   0.150    6.475 v FE_RC_394_0/Y (sky130_fd_sc_hd__o21ai_4)
+   0.305    6.780 ^ FE_RC_454_0/Y (sky130_fd_sc_hd__a31oi_1)
+   0.245    7.024 v FE_OFC2413_sub_1240_38_Y_add_1240_58_n_2128/Y (sky130_fd_sc_hd__inv_2)
+   0.302    7.326 ^ sub_1240_38_Y_add_1240_58_g3149/Y (sky130_fd_sc_hd__a21oi_1)
+   0.151    7.477 v FE_OFC1862_sub_1240_38_Y_add_1240_58_n_2118/Y (sky130_fd_sc_hd__inv_2)
+   0.264    7.741 ^ sub_1240_38_Y_add_1240_58_g3131/Y (sky130_fd_sc_hd__a21oi_1)
+   0.180    7.921 v sub_1240_38_Y_add_1240_58_g3126/Y (sky130_fd_sc_hd__xnor2_1)
+   0.127    8.048 ^ g147058/Y (sky130_fd_sc_hd__nand2_1)
+   0.222    8.270 v g145669/Y (sky130_fd_sc_hd__o221ai_2)
+   0.000    8.270 v alu_out_q_reg[30]/D (sky130_fd_sc_hd__dfxtp_1)
+            8.270   data arrival time
+
+   8.000    8.000   clock clk (rise edge)
+   0.000    8.000   clock source latency
+   0.000    8.000 ^ clk (in)
+   0.309    8.309 ^ CTS_ccl_a_buf_00174/X (sky130_fd_sc_hd__clkbuf_16)
+   0.354    8.662 ^ CTS_ccl_a_buf_00158/X (sky130_fd_sc_hd__clkbuf_16)
+   0.299    8.961 ^ CTS_ccl_a_buf_00006/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    8.961 ^ alu_out_q_reg[30]/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.250    8.711   clock uncertainty
+   0.000    8.711   clock reconvergence pessimism
+  -0.316    8.395   library setup time
+            8.395   data required time
+-----------------------------------------------------------
+            8.395   data required time
+           -8.270   data arrival time
+-----------------------------------------------------------
+            0.125   slack (MET)
+
+
+Startpoint: cpuregs_reg[18][17] (rising edge-triggered flip-flop clocked by clk)
+Endpoint: cpuregs_reg[18][17] (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.309    0.309 ^ CTS_ccl_a_buf_00174/X (sky130_fd_sc_hd__clkbuf_16)
+   0.354    0.662 ^ CTS_ccl_a_buf_00162/X (sky130_fd_sc_hd__clkbuf_16)
+   0.282    0.944 ^ CTS_ccl_a_buf_00084/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.945 ^ cpuregs_reg[18][17]/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.633    1.578 v cpuregs_reg[18][17]/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.109    1.687 ^ FE_RC_374_0/Y (sky130_fd_sc_hd__nand2_1)
+   0.114    1.801 v FE_RC_373_0/Y (sky130_fd_sc_hd__o21ai_1)
+   0.000    1.801 v cpuregs_reg[18][17]/D (sky130_fd_sc_hd__dfxtp_1)
+            1.801   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.309    0.309 ^ CTS_ccl_a_buf_00174/X (sky130_fd_sc_hd__clkbuf_16)
+   0.354    0.662 ^ CTS_ccl_a_buf_00162/X (sky130_fd_sc_hd__clkbuf_16)
+   0.282    0.944 ^ CTS_ccl_a_buf_00084/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.945 ^ cpuregs_reg[18][17]/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.250    1.195   clock uncertainty
+   0.000    1.195   clock reconvergence pessimism
+  -0.102    1.093   library hold time
+            1.093   data required time
+-----------------------------------------------------------
+            1.093   data required time
+           -1.801   data arrival time
+-----------------------------------------------------------
+            0.708   slack (MET)
+
+
+STA_SETUP_WORST 0.125
+STA_HOLD_WORST 0.708
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+g76831__1881/A2                         1.50    1.47    0.03 (MET)
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+CTS_ccl_a_buf_00001/X                    10     10      0 (MET)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+FE_OFC65_pcpi_rs1_15/X                  0.08    0.08    0.00 (MET)
+
+STA_MAX_SLEW_VIOLATIONS 0
+STA_MAX_CAP_VIOLATIONS 0
+STA_MAX_FANOUT_VIOLATIONS 0
