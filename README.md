@@ -28,7 +28,7 @@ The package contains the design data, the commercial-tool results the release is
 | `sim/tb_picorv32_golden.v` | Testbench: hand-assembled RV32I program summing 1..10, stores 55 to `0x10000000` |
 | `verify/` | One script per check; `run_all.sh` runs all of them |
 | `reports/` | Output of `verify/run_all.sh` on this package |
-| `docs/TRACE-V_PicoRV32_SKY130_deck.pdf` | Presentation |
+| `docs/TRACE-V_PicoRV32_SKY130_deck.pdf`, `docs/TRACE-V_PicoRV32_SKY130_whitepaper.pdf` | Presentation and whitepaper |
 | `LICENSE`, `LICENSES/`, `NOTICE` | License of this package, the third-party licenses, and who holds what |
 | `SHA256SUMS` | Checksums of every file except `reports/` and itself |
 
