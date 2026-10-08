@@ -9,7 +9,7 @@ for s in versions sim sta transistors drc_magic drc_klayout antenna_magic lvs; d
   echo "--- $s"; bash "$HERE/$s.sh" || true
 done
 fail=0; : > "$REPORTS/summary.txt"
-for n in integrity versions transistors sim_8ns sim_4ns_control sta_ss sta_tt sta_ff drc_magic drc_klayout antenna_magic lvs; do
+for n in integrity versions transistors sim_8.25ns sim_4.125ns_control sta_ss sta_tt sta_ff drc_magic drc_klayout antenna_magic lvs; do
   f="$REPORTS/$n.result"
   if [ -f "$f" ]; then line="$(cat "$f")"; else line="FAIL not run"; fi
   printf '%-18s %s\n' "$n" "$line" >> "$REPORTS/summary.txt"

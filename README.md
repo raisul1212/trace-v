@@ -3,8 +3,10 @@
 TRACE-V stands for "Traceable RISC-V: AI-built, Checked, Evidenced". It is a routed,
 block-level implementation of [PicoRV32](https://github.com/YosysHQ/picorv32)
 (32-bit RISC-V, RV32I, default parameters) in the SkyWater `sky130A` process with the
-`sky130_fd_sc_hd` standard-cell library, clocked at 8 ns (125 MHz). The repository is
+`sky130_fd_sc_hd` standard-cell library, clocked at 8.25 ns (about 121 MHz). The repository is
 https://github.com/raisul1212/trace-v.
+
+Release v1.0.1 replaces the 8 ns route of v1.0 with an 8.25 ns route, which has a wider setup margin at the slow corner; the 8 ns release remains available at tag v1.0.
 
 The release covers the following checks. Timing was signed off at three corners with 0.25 ns clock uncertainty. DRC was run with two independent decks, LVS against the routed netlist, and logic equivalence at both synthesis and routing. Post-layout gate-level simulation was run with flop timing checks, and static IR was analyzed. Every physical, DRV and simulation check was shown to fail on a known-bad input before it was trusted. The physical, timing and simulation checks can be reproduced from this package with open-source tools.
 
@@ -94,15 +96,15 @@ or an unreadable SPEF is reported as FAIL, not as zero violations.
 | `verify/antenna_magic.sh` | Magic extraction and `antennacheck`; the feedback entries added by `antennacheck` are counted | 0 violations |
 | `verify/lvs.sh` | Magic extraction from the GDS, Netgen LVS against `netlist/picorv32.routed.pg.v` with the PDK setup file; standard cells are also compared at transistor level | `Circuits match uniquely` |
 | `verify/sta.sh` (`sta.tcl`) | OpenSTA at ss 100 C 1.60 V, tt 25 C 1.80 V, ff -40 C 1.95 V with the routed netlist, SDC and SPEF, propagated clock; the SPEF annotation is checked | setup and hold slack >= 0, no slew, capacitance or fanout violations, SPEF read without error |
-| `verify/sim.sh` | Icarus Verilog gate-level simulation with SDF back-annotation at 8 ns, plus a 4 ns negative control | 8 ns: `RESULT 55`, `VERDICT PASS`; 4 ns: `VERDICT FAIL` |
-| `verify/transistors.sh` | Transistor count: cell instances in `layout/picorv32.def` times the transistors per cell in the PDK cell SPICE | 88053 |
+| `verify/sim.sh` | Icarus Verilog gate-level simulation with SDF back-annotation at 8.25 ns, plus a 4.125 ns negative control (half the period) | 8.25 ns: `RESULT 55`, `VERDICT PASS`; 4.125 ns: `VERDICT FAIL` |
+| `verify/transistors.sh` | Transistor count: cell instances in `layout/picorv32.def` times the transistors per cell in the PDK cell SPICE | 87237 |
 
-The 4 ns control is part of the simulation check: a passing simulation at a clock that the timing
+The 4.125 ns control is part of the simulation check: a passing simulation at a clock that the timing
 rejects would show that the SDF was not applied. Each verify script was checked to fail on a deliberately damaged input.
 
 ## Results
 
-### 1. Signoff results (commercial tools, 8 ns)
+### 1. Signoff results (commercial tools, 8.25 ns)
 
 Produced with commercial signoff tools and recorded in the project ledger. The scripts in this package do not regenerate these numbers.
 
@@ -111,16 +113,17 @@ Produced with commercial signoff tools and recorded in the project ledger. The s
 | DRC (Magic) | 0 |
 | DRC (KLayout) | 0 |
 | Antenna | 0 |
-| LVS | matched, 8,600 / 8,600 nets |
+| LVS | matched, 8,492 / 8,492 nets |
 | Logic equivalence (RTL to netlist) | equivalent at both steps (1,916 and 1,864 compare points) |
-| Setup slack, ss / tt / ff | +0.013 / +2.394 / +2.883 ns |
-| Hold slack, ss / tt / ff | +0.712 / +0.221 / +0.038 ns |
+| Setup slack, ss / tt / ff | +0.180 / +2.388 / +2.957 ns |
+| Hold slack, ss / tt / ff | +0.716 / +0.214 / +0.034 ns |
 | Clock uncertainty | 0.25 ns, included in the slacks above |
 | Slew, capacitance, fanout violations | 0 at all corners |
-| Gate-level simulation | passes at 8 ns; the 4 ns control fails |
-| Gate-level simulation with timing checks (Xcelium) | 0 violations at 8 ns |
-| Static IR drop | 12.0 / 12.5 mV against an 80 mV budget |
-| Size | 7,913 cells, 88,053 transistors, die 357.88 x 355.64 um |
+| Gate-level simulation (Icarus Verilog) | passes at 8.25 ns; the control fails |
+| Gate-level simulation with timing checks (Xcelium) | 0 violations at 8.25 ns, with 3,114 setup/hold checks applied; the 4 ns control fails with 76 violations |
+| Static IR drop | VPWR 11 mV / VGND 11.6 mV against an 80 mV budget |
+| Power | 13.0 mW at 20% activity |
+| Size | 7,845 cells, 71,909 um2, 87,237 transistors, die 357.42 x 355.64 um |
 
 ### 2. Reproduced with open-source tools
 
@@ -129,29 +132,29 @@ The checks were run in a fresh copy of this package, inside the container `ghcr.
 | Check | Status | Detail |
 |---|---|---|
 | Package checksums | PASS | SHA256SUMS verified |
-| Transistor count (DEF x PDK cell SPICE) | PASS | 88053 transistors in 20599 DEF components (141 cell types) |
-| Gate-level simulation, 8 ns | PASS | RESULT 55, VERDICT PASS |
-| Simulation negative control, 4 ns | PASS | control fails as expected (RESULT timeout) |
-| OpenSTA ss (100 C, 1.60 V) | PASS | setup 0.125 ns, hold 0.708 ns, slew/cap/fanout violations 0/0/0, SPEF annotated 8491 of 8665 drivers (174 unannotated) |
-| OpenSTA tt (25 C, 1.80 V) | PASS | setup 2.403 ns, hold 0.219 ns, slew/cap/fanout violations 0/0/0, SPEF annotated 8491 of 8665 drivers (174 unannotated) |
-| OpenSTA ff (-40 C, 1.95 V) | PASS | setup 2.886 ns, hold 0.037 ns, slew/cap/fanout violations 0/0/0, SPEF annotated 8491 of 8665 drivers (174 unannotated) |
-| DRC, Magic | PASS | 0 DRC errors (151 cell types in the top cell) |
+| Transistor count (DEF x PDK cell SPICE) | PASS | 87237 transistors in 20924 DEF components (136 cell types) |
+| Gate-level simulation, 8.25 ns | PASS | RESULT 55, VERDICT PASS |
+| Simulation negative control, 4.125 ns | PASS | control fails as expected (RESULT trap) |
+| OpenSTA ss (100 C, 1.60 V) | PASS | setup 0.280 ns, hold 0.712 ns, slew/cap/fanout violations 0/0/0, SPEF annotated 8384 of 8557 drivers (173 unannotated) |
+| OpenSTA tt (25 C, 1.80 V) | PASS | setup 2.403 ns, hold 0.212 ns, slew/cap/fanout violations 0/0/0, SPEF annotated 8384 of 8557 drivers (173 unannotated) |
+| OpenSTA ff (-40 C, 1.95 V) | PASS | setup 2.964 ns, hold 0.032 ns, slew/cap/fanout violations 0/0/0, SPEF annotated 8384 of 8557 drivers (173 unannotated) |
+| DRC, Magic | PASS | 0 DRC errors (145 cell types in the top cell) |
 | DRC, KLayout sky130A_mr | PASS | 0 findings |
-| Antenna, Magic | PASS | 0 antenna violations (20900 gates analyzed.; 0 extraction warning(s)) |
-| LVS, Magic + Netgen | PASS | Circuits match uniquely; Circuit 1 contains 8388 devices, Circuit 2 contains 8388 devices. Circuit 1 contains 8600 nets, Circuit 2 contains 8600 nets. |
+| Antenna, Magic | PASS | 0 antenna violations (20800 gates analyzed.; 1 extraction warning(s)) |
+| LVS, Magic + Netgen | PASS | Circuits match uniquely; Circuit 1 contains 8273 devices, Circuit 2 contains 8273 devices. Circuit 1 contains 8492 nets, Circuit 2 contains 8492 nets. |
 
 Notes on this run:
 
-* The ss setup slack is +0.125 ns in OpenSTA and +0.013 ns in the commercial signoff timer; both meet timing. The setup slack is the worst over all paths, including the half-period input and output paths.
-* LVS: the antenna diodes are written by Magic as an instance with `perim=`, and by the PDK cell SPICE as a diode element with `pj=`. `verify/lvs.sh` rewrites that one line of the extracted SPICE (same values) before Netgen runs; without it, Netgen fails on every diode cell. LVS compares 8,388 cell instances and 8,600 nets, and each library cell is also compared at transistor level against the PDK SPICE.
+* The ss setup slack is +0.280 ns in OpenSTA and +0.180 ns in the commercial signoff timer; both meet timing. The setup slack is the worst over all paths, including the half-period input and output paths.
+* LVS: the antenna diodes are written by Magic as an instance with `perim=`, and by the PDK cell SPICE as a diode element with `pj=`. `verify/lvs.sh` rewrites that one line of the extracted SPICE (same values) before Netgen runs; without it, Netgen fails on every diode cell. LVS compares 8,273 cell instances and 8,492 nets, and each library cell is also compared at transistor level against the PDK SPICE.
 * The transistor count is derived from the DEF components, which include tap and filler cells (zero transistors); the cell count in table 1 is counted differently.
-* A gate-level simulation at 4 ns (control) must fail; the testbench times out. At 8 ns, `RESULT 55` and `VERDICT PASS` are printed.
+* A gate-level simulation at 4.125 ns (control) must fail; the core traps and `RESULT trap` is printed. At 8.25 ns, `RESULT 55` and `VERDICT PASS` are printed.
 
 ## Limitations
 
-* Timing is signed off at nominal RC. A check at max RC with OpenRCX and OpenSTA passes with +0.31 ns of margin, but an estimate combining the two extractors puts the margin at about -0.15 ns at max RC, so about 8.2 ns would be needed there. The package holds one SPEF (nominal RC); the three STA corners reuse it.
+* Timing is signed off at nominal RC. An independent re-extraction shows max RC costs 0.21 ns of ss setup; an estimate combining the two extractors puts the margin at about -0.03 ns at max RC, so about 8.3 ns would be needed there. The package holds one SPEF (nominal RC); the three STA corners reuse it.
 * The I/O timing is set to the testbench's half-cycle protocol: inputs are driven and outputs are sampled on the falling clock edge. The ports `mem_la_*`, `pcpi_*`, `eoi` and `trace_*` are unconstrained.
-* The margins are thin: ss setup +0.013 ns and ff hold +0.038 ns, after 0.25 ns of clock uncertainty.
+* The margins are thin: ss setup +0.180 ns and ff hold +0.034 ns, after 0.25 ns of clock uncertainty.
 * The post-layout simulation runs one 9-instruction program covering 6 of 40 RV32I opcodes; LEC and STA cover the whole design.
 * Scope: packaging, electromigration, metal fill, seal ring, pad frame, foundry precheck and dynamic IR were outside the scope of this block-level release.
 
@@ -164,7 +167,7 @@ The package was derived from the working run directory without changing the desi
 * Eight buffer instances named by the flow were renamed `alias_1` to `alias_8` consistently in every netlist, the DEF, the SPEF and the SDFs.
 * `constraints/picorv32.sdc`: the leading comment lines were rewritten; every command is byte-identical.
 * `sim/tb_picorv32_golden.v`: the leading comment block was rewritten; the code is unchanged.
-* `timing/picorv32.sim.sdf` is `timing/picorv32.sdf` with the INTERCONNECT entries ending at a port removed (449 entries; Icarus Verilog cannot annotate them).
+* `timing/picorv32.sim.sdf` is `timing/picorv32.sdf` with the INTERCONNECT entries ending at a port removed (454 entries; Icarus Verilog cannot annotate them).
 * `rtl/picorv32.v` is the upstream file, byte for byte.
 
 ## License
