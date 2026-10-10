@@ -29,7 +29,7 @@ Copyright (c) 2026 Raisul Islam. All rights reserved, except as granted below.
    This license does not restrict any right that those licenses grant in those components themselves.
 
 6. Origin.
-   These design outputs were produced with electronic design automation software licensed to Purdue University for academic instruction and research. This license keeps the outputs within that use.
+   The design outputs in commercial/ were produced with electronic design automation software licensed to Purdue University for academic instruction and research. The design outputs in open/ were produced with open-source tools and were verified in part with electronic design automation software licensed to Purdue University for academic instruction and research. This license keeps all outputs in this repository within that use.
 
 7. No warranty; no liability.
    THE FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE FILES OR THEIR USE, INCLUDING ANY USE IN FABRICATION.

@@ -1,0 +1,1 @@
+PASS setup 0.129 ns, hold 0.744 ns, slew/cap/fanout violations 0/0/0, SPEF annotated 10696 of 11009 drivers (313 unannotated)

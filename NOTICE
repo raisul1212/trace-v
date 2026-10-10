@@ -1,4 +1,6 @@
-This package contains work under three licenses.
+This package contains work under three licenses. The folders commercial/ and
+open/ each contain rtl/picorv32.v and SkyWater SKY130 data; items 2 and 3
+apply to both folders.
 
 1. This package (netlists, layout, constraints, timing data, testbench, scripts
    and documentation), except the components listed in 2 and 3:

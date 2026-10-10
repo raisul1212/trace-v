@@ -1,0 +1,12 @@
+integrity          PASS SHA256SUMS verified
+versions           PASS Magic: 8.3.623;Netgen: Netgen 1.5.316 compiled on Tue Feb 10 11:09:08 UTC 2026;KLayout: KLayout 0.30.7;OpenSTA: 2.7.0;Icarus Verilog: Icarus Verilog version 13.0 (devel) ();Python: Python 3.13.9;
+transistors        PASS 183139 transistors in 45691 DEF components (128 cell types)
+sim_8.25ns         PASS RESULT 55, VERDICT PASS
+sim_4.125ns_control PASS control fails as expected (RESULT timeout)
+sta_ss             PASS setup 0.129 ns, hold 0.744 ns, slew/cap/fanout violations 0/0/0, SPEF annotated 10696 of 11009 drivers (313 unannotated)
+sta_tt             PASS setup 2.028 ns, hold 0.235 ns, slew/cap/fanout violations 0/0/0, SPEF annotated 10696 of 11009 drivers (313 unannotated)
+sta_ff             PASS setup 2.706 ns, hold 0.054 ns, slew/cap/fanout violations 0/0/0, SPEF annotated 10696 of 11009 drivers (313 unannotated)
+drc_magic          PASS 0 DRC errors (128 cell types in the top cell)
+drc_klayout        PASS 0 findings
+antenna_magic      PASS 0 antenna violations (30900 gates analyzed.; 3 extraction warning(s))
+lvs                PASS Circuits match uniquely; Circuit 1 contains 11237 devices, Circuit 2 contains 11237 devices. Circuit 1 contains 10944 nets, Circuit 2 contains 10944 nets.
